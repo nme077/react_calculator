@@ -162,14 +162,14 @@ render() {
 
     return (
       <div id="app" className="container">
-        <div className="row fixed-top">
-          <h1 className="text-center pt-5" id="title">Calculator</h1>
-        </div>
         <div className="row">
           <div id="calculator" className="shadow-lg rounded">
             <div id="display-operations" className="display">{this.state.line1Arr.join('')}</div>
             <div id="display" className="display">
               {this.state.line2Arr.join('')}
+            </div>
+            <div className="px-4 calcLabelContainer">
+              <p className="my-0 calcLabelText">Nicholas Eveland</p>
             </div>
             <div>
               {numButtons}
