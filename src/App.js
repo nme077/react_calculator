@@ -161,37 +161,37 @@ render() {
     )});
 
     return (
-      <div id="app" className="container">
-        <div className="row">
-          <div id="calculator" className="shadow-lg rounded">
-            <div id="display-operations" className="display">{this.state.line1Arr.join('')}</div>
-            <div id="display" className="display">
-              {this.state.line2Arr.join('')}
-            </div>
-            <div className="px-4 calcLabelContainer">
-              <p className="my-0 calcLabelText">Nicholas Eveland</p>
-            </div>
-            <div>
-              {numButtons}
+      <div id="app" className="container min-vh-100 min-vw-100 d-flex align-items-center justify-content-center app-container">
+        <div className="">
+          <div className="row">
+            <div id="calculator" className="shadow-lg rounded">
+              <div id="display-operations" className="display">{this.state.line1Arr.join('')}</div>
+              <div id="display" className="display">
+                {this.state.line2Arr.join('')}
+              </div>
+              <div className="px-4 calcLabelContainer">
+                <p className="my-0 calcLabelText">Nicholas Eveland</p>
+              </div>
+              <div>
+                {numButtons}
+              </div>
             </div>
           </div>
         </div>
-        <div className="row fixed-bottom py-4">
-          <footer className="col-12 px-0 text-center text-dark">
-            <div>
-                <a href="mailto:cardapp77@gmail.com" className="social-link" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faPaperPlane} />
-                </a>
-                <a href="http://www.linkedin.com/in/nicholas-eveland-7988279a" className="social-link" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-                <a href="https://github.com/nme077" className="social-link" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-            </div>
-            <small id="copyright" className="text-white">&copy; Copyright 2021, Nicholas Eveland</small>
-          </footer> 
-        </div>
+        <footer className="px-0 text-center text-dark">
+          <div className="p-0">
+              <a href="mailto:cardapp77@gmail.com" className="social-link" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={faPaperPlane} />
+              </a>
+              <a href="http://www.linkedin.com/in/nicholas-eveland-7988279a" className="social-link" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+              <a href="https://github.com/nme077" className="social-link" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+              </a>
+          </div>
+          <small id="copyright" className="text-white p-0">&copy; Copyright 2021, Nicholas Eveland</small>
+        </footer> 
       </div>
     )
   }

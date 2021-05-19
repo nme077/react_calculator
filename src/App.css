@@ -1,14 +1,13 @@
+
+
+#app {
+  padding-bottom: 6rem;
+}
+
 #title {
   font-family: 'Source Code Pro', monospace;
   font-size: 4rem;
   font-weight: 900;
-}
-
-#app {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  height: 100vh;
 }
 
 #calculator {
@@ -91,4 +90,12 @@ button:focus {
   height: 1rem;
   padding-bottom: 25px;
   padding-top: 5px
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 6rem; 
+  text-align: center;
+  padding-top: 10px;
 }
